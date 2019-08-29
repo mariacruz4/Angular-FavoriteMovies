@@ -1,1 +1,9 @@
-<p>add-movie works!</p>
+<form [formGroup]= "movieForm" (ngSubmit)= "onSubmit()">
+    <div class="form-group" style="margin-top:20px">
+        <input formControlName="title" type="text" class="form-control" placeholder="Title" style="width: 50%; margin-left:10px; margin-bottom:10px;">
+        <input formControlName="description" type="text" class="form-control" placeholder="Description" style="width: 50%; margin-left:10px;  margin-bottom:10px;">
+        <input formControlName="image" type="text" class="form-control" placeholder="Image" style="width: 50%;  margin-left:10px; margin-bottom:10px;">
+    </div>
+
+    <button type="submit" style="margin-left:10px; margin-bottom: 10px;" class="btn btn-success">Add Movie</button>
+</form>
