@@ -23,14 +23,14 @@
         </li>
     </ul>
 </div>
-<div class="row">
-    <div class="col-12" *ngIf="movieBeingDisplayed">
-      <div class="card">
-        <img class="card-img-top" [src]="movie.image" alt="Card image cap" height="200" style="float:right;">
+<div class="row" >
+    <div class="col-12" *ngIf="moviesBeingDisplayed">
+      <div class="card" style="width: 200px;">
+        <img class="card-img-top" [src]="moviesBeingDisplayed.image" alt="Card image cap" height="300"style="float: right;">
         <div class="card-body">
-          <h5 class="card-title"> {{movieBeingDisplayed.title}}</h5>
+          <h5 class="card-title"> {{moviesBeingDisplayed.title}}</h5>
           <p class="card-text">
-            {{movieBeingDisplayed.description}}
+            {{moviesBeingDisplayed.description}}
           </p>
         </div>
       </div>

@@ -7,9 +7,6 @@ import{MovieService, Movie} from '../movie.service';
 })
 export class ListComponent implements OnInit {
 
-  @Input() movie:Movie;
-  @Input() i:number;
-  
   movies:Movie[] = [];
   displayList = true;
   moviesBeingEdited={};
