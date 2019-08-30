@@ -6,11 +6,11 @@ import{MovieService, Movie} from '../movie.service';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit {
-
   movies:Movie[] = [];
   displayList = true;
   moviesBeingEdited={};
   moviesBeingDisplayed:Movie;
+  movieDisplayed:boolean;
   constructor(private movieService: MovieService) {
     this.movieService = movieService;
    }
@@ -35,5 +35,6 @@ export class ListComponent implements OnInit {
   }
     onViewMovie(movie:Movie){
       this.moviesBeingDisplayed = movie;
+      this.movieDisplayed = true;
     }
   }
